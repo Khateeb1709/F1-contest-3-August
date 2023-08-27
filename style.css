@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Inter&family=Mada&family=Poppins&family=Roboto&family=Rubik&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: linear-gradient(to right, #fef5f4, #fffef4);
+  margin-left: 13px;
+  /* width: 100vw; */
+  padding-inline: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+  align-items: start;
+}
+
+ul > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: #212244;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul > li > a:hover {
+  color: black;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+}
+
+.search-option {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 220px;
+  height: 40px;
+  padding: 5px 10px;
+}
+
+.nav-right > img {
+  margin-inline: 10px;
+}
+
+.nav-right > button {
+  margin-inline: 10px;
+  border-radius: 10px;
+  background-color: #f94a3d;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+#hero-message {
+  color: #212244;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 70px; /* 116.667% */
+}
+
+.hero-frame-container {
+  text-align: center;
+  width: 50%;
+}
+.hero-frame-container > img {
+  width: 100%;
+  margin-right: 20px;
+}
+.hero-text {
+  margin-top: 10px;
+  width: 520px;
+}
+
+.hero-text > button {
+  padding: 10px 20px;
+  border-radius: 16px;
+  background-color: #f94a3d;
+  border: none;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-menu-icon{
+    display: none !important;
+}
+
+@media only screen and (max-width: 1090px){
+
+    .nav-menu-container{
+        display: none;
+    }
+
+    .nav-right{
+        display: none;
+    }
+
+    .nav-menu-icon{
+        display: block !important;
+        font-size: 25px;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .hero-frame-container {
+        text-align: center;
+        width: 80vw;
+      }
+}
+
+
+@media only screen and (max-width:500px){
+    .hero-frame-container{
+        width: 100vw;
+    }
+
+    #hero-message{
+        font-size: 40px;
+    }
+
+    .hero-text{
+        width: 90vw;
+    }
+}
